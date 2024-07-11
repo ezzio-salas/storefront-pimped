@@ -1,5 +1,6 @@
 import { invariant } from "ts-invariant";
 import { RootWrapper } from "./pageWrapper";
+import { company } from "@/labels/company";
 
 export const metadata = {
 	title: "Checkout · Saleor Storefront example",
@@ -21,7 +22,7 @@ export default function CheckoutPage({
 			<section className="mx-auto flex min-h-dvh max-w-7xl flex-col p-8">
 				<div className="flex items-center font-bold">
 					<a aria-label="homepage" href="/">
-						ACME
+						{company.name}
 					</a>
 				</div>
 				<h1 className="mt-8 text-3xl font-bold text-neutral-900">Checkout</h1>
