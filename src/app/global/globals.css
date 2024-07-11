@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: Proxima Nova;
+		font-weight: 400;
+		src: url(/fonts/proxima-nova/400-regular.woff) format("woff");
+	}
+	@font-face {
+		font-family: Proxima Nova;
+		font-weight: 500;
+		src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
+	}
+}
+
+@layer components {
+	.header {
+		background-color: #ff6600;
+		color: white;
+	}
+	.ui {
+		color: white;
+	}
+	.footer {
+		background-color: #ff6600; /* Custom background color */
+		color: #ffffff; /* Custom text color */
+		padding: 1rem; /* Custom padding */
+		text-align: center; /* Center text alignment */
+	}
+	.footer > div {
+		color: #ffffff;
+	}
+}
+
+@layer utilities {
+	.body {
+		background-color: #ff6600;
+	}
+	.footer {
+		background-color: #ff6600;
+	}
+}
